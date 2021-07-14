@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>クイズアプリ</h1>
+    <h2>りさの好きなじゃがりこクイズ</h2>
+    <button id="1">塩バター</button>
+    <button id="2">チーズ</button>
+    <button id="3">サラダ</button>
+    <div id="htht">答え</div>
+
+    <script>
+      // 1. 画面をよみこんだとき (最初)
+      const number1 = document.getElementById("1")
+      const number2 = document.getElementById("2")
+      const number3 = document.getElementById("3")
+      const htht = document.getElementById("htht")
+
+      number1.onclick = function() {
+        // 2. 塩バターが押された時
+        htht.textContent = "正解！"
+      }
+
+      // チーズが押された時の動きを登録する
+      number2.onclick = function() {
+        // 2. チーズが押された時に動く
+        htht.textContent = "好きだけど、違うかな！"
+      }
+
+      number3.onclick = function() {
+        htht.textContent = "残念～"
+      }
+    </script>
+  </body>
+</html>
