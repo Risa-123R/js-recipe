@@ -4,7 +4,7 @@ if (number % 3 === 0) {
 } else {
   console.log(number)
 }
-genkiFunction(24)
+
 const genkiFunction = function(number) {
   for (let n = 1; n <= number; n++) {
     if (n % 3 === 0) {
@@ -14,3 +14,4 @@ const genkiFunction = function(number) {
     }
   }
 }
+genkiFunction(24)
